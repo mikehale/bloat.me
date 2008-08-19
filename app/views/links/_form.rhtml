@@ -1,10 +1,7 @@
 <% form_for :link, @link, :url => {:controller => :links ,:action => 'create'}  do |f| %>
-  <label for="link_website_url">Website URL</label>
+  <h1><label for="link_website_url">Enter a bloated URL</label></h1>
   <%= f.text_field :website_url %>
   
-  <%= submit_tag 'Go!' -%>
+  <button type="submit" value="Submit">Shrink it</button>
 <% end %>
-<br />
-<label>
-  <%= check_box_tag :auto_copy, 1, cookies[:auto_copy] == '1' %> Automatically copy new RubyURL
-</label>
+<label for="auto_copy" id="copyPaste"><%= check_box_tag :auto_copy, 1, cookies[:auto_copy] == '1' %> Automatically copy short URL</label>

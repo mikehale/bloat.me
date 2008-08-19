@@ -1,3 +1,12 @@
-<p>&copy; 2005-<%= Time.now.strftime('%Y') %>, RubyURL.</p> 
-<p>Based on an open source project by <a href="http://www.planetargon.com/" title="Design, Development, and Hosting with Ruby on Rails">PLANET ARGON</a>.</p>
-<p><span><%= @cached_data[:link_count] -%></span> happy rubyURLs and counting. <a href="http://nokahuna.com/projects/968">Ideas, Suggestions, bugs?</a></p>
+<div id="footer">
+	
+	<div id="bookmarklet">
+		<p>Drag the link below to the bookmarks toolbar of your browser to shrinks URLs on click!</p>
+		<p id="action">
+			<a href="javascript:void(location.host=='maps.google.com'?location.href='http://bloat.me/remote?website_url='+encodeURIComponent(document.getElementById('link').href):location.href='http://rubyurl.com/remote?website_url='+encodeURIComponent(location.href))">Bloat.me</a>
+		</p>
+	</div>
+	<p><!-- Bloating <%= @cached_data[:link_count] -%> urls and counting. --><%= link_to 'Why Bloat.me', '/about' -%>? Share your <a href="http://nokahuna.com/projects/968">Ideas, Suggestions, bugs</a>.</p>
+	<p>&copy;2008-<%= Time.now.strftime('%Y') %>, Bloat.me.</p>
+</div>
+

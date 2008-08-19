@@ -1,1 +1,55 @@
-/*------------------------------------------------rubyurl2007-08-06coded by: Chris Griffin / http://planetargon.com													http://chriszgriffin.com------------------------------------------------*//*------------------------------------------------------------------------ =Default------------------------------------------------------------------------*/body {	background: #FFF;	font: 0.9em 'Lucida Grande', Arial, sans-serif; 	color: #000;}p {	margin-bottom: 18px;}	ul {	margin-bottom: 18px;}li {	margin-left: 9px;}/*------------------------------------------------------------------------ =Structure------------------------------------------------------------------------*/#wrapper {	width:740px;	margin:0px auto;}#header {	position: relative;	overflow: hidden;}#logo {}#app_content,#info_content {	clear: both;}#app_content {	text-align: center;}#info_content {	background: #f9f9f3;	padding: 0 18px 18px;	color: #333;}#app_content a {}#app_content p {	margin: 0 18px 18px;}#app_content #url,#app_content #action {}#app_content #url {}#app_content #action a {	text-transform: uppercase;}#url_stats {	overflow: hidden;	margin: 0 auto 18px;}		#tos {}#footer {	text-align: center;}#footer p {	margin: 0;}#footer a {	color: #f00;}#footer span {	color: #f00;}/*------------------------------------------------------------------------ =Typography------------------------------------------------------------------------*/h1 {	font-size: 1.5em;	line-height: 36px;	margin-bottom: 18px;}#info_content h1 {	font-weight: bold;	margin: 0 -18px 18px;	padding: 0 18px;}h2 {}h3 {}strong {font-weight: bold;}em {font-style: italic;}/*------------------------------------------------------------------------ =Links------------------------------------------------------------------------*/a {}#info_content a {	font-weight: bold;}/*------------------------------------------------------------------------ =Forms------------------------------------------------------------------------*/label {}input {}/*------------------------------------------------------------------------ =Code samples------------------------------------------------------------------------*/
+/* @override http://localhost:3000/stylesheets/master.css?1219156771 */
+
+/*------------------------------------------------rubyurl2007-08-06coded by: Chris Griffin / http://planetargon.com													http://chriszgriffin.com------------------------------------------------*//*------------------------------------------------------------------------ =Default------------------------------------------------------------------------*/body {	background: #FFF;	font: 0.9em 'Lucida Grande', Arial, sans-serif; 	color: #000;}
+
+p {
+  margin: 0.5em 0px;
+}/*------------------------------------------------------------------------ =Structure------------------------------------------------------------------------*/#wrapper {	width:740px;	margin:0px auto;}#header {	position: relative;	overflow: hidden;}#logo {}#action a {
+	}#url_stats {	overflow: hidden;	margin: 0 auto 18px;}		#tos {}#footer {	text-align: left;	position:absolute;	bottom:0px;	width:100%;	left:0px;	padding:0px;	font-size:0.8em;
+	color: #666;
+	border-top: 1px solid #DDD;}#footer p {	margin: 1em;}#footer a {	color:#666;}/*------------------------------------------------------------------------ =Typography------------------------------------------------------------------------*/h1 {	font-size: 1.5em;}
+
+form h1 {
+  font-size: 1.3em;
+  margin-bottom: 0.8em;
+  color: #333;
+  font-weight: normal;
+}
+
+#info_content h1 {}h2 {font-weight: bold;}h3 {}strong {font-weight: bold;}em {font-style: italic;}/*------------------------------------------------------------------------ =Links------------------------------------------------------------------------*/a {}#info_content a {	font-weight: bold;}/*------------------------------------------------------------------------ =Forms------------------------------------------------------------------------*/#link_website_url {	font-size:1.3em;	padding:0.2em 0.2em;
+	vertical-align: middle;
+	width:22em;}
+button {	font-size:1em;	padding:0.3em 0.8em;	background-color:#999;
+	vertical-align: middle;
+	border: 1px solid #666;
+	color: #FFF;
+	  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;}
+/*------------------------------------------------------------------------ =Code samples------------------------------------------------------------------------*/#bookmarklet {
+	float: right;
+	line-height:1.5em;	border-left:1px solid #EEE;	padding:1em 1.2em 1em 1.2em;
+	margin: 0px;
+	width: 300px;}
+
+#bookmarklet p {
+  margin: 0px 0px 0.5em 0px;
+}
+
+#action {
+  margin: 0px;
+}
+
+
+#url {
+ text-align: center;
+ margin-top: 15%;
+}
+
+
+
+#copyPaste {
+  font-size: 0.9em;
+  margin-top: 1.5em;
+  display: block;
+  color: #666;
+}
