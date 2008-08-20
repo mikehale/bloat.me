@@ -1,18 +1,20 @@
-== RubyURL
+== Bloat.me
 
-This project is the source code for the application that powers Rubyurl.com. 
+This project is the source code for the application that powers bloat.me. 
 
-* http://rubyurl.com
-
-Feel free to start your own URL-shortening service!
+* http://bloat.me
 
 == Bugs and/or Feedback
 
-Feel free to submit tickets to the Rubyurl ticket system.
+Feel free to submit tickets to the No Kahuna project site:
 
-* http://planetargon.lighthouseapp.com/projects/4059-rubyurl
+* http://nokahuna.com/projects/968
 
 == Authors
 
-Robby Russell <robby@planetargon.com>
-Chris Griffin <chris.griffin@planetargon.com>
+Alexander Kohlhofer - http://plasticshore.com
+
+Based on the excellent source code created by Robby Russell & Chris Griffin
+You can find their code on on github:
+
+http://github.com/robbyrussell/rubyurl/tree/master
