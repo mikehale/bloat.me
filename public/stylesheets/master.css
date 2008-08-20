@@ -139,7 +139,7 @@ a.bloatMeUrl {
  text-align: left;
  width: 600px;
  padding: 0px 2em;
- margin: 3em auto 0px auto;
+ margin: 2em auto 0px auto;
 }
 
 
@@ -157,3 +157,13 @@ a.bloatMeUrl {
   text-decoration: none;
     background: #4086cb url(../images/blue.gif) repeat-x left top;
     }
+
+div.note {
+  font-size: 0.9em;
+  color: #999;
+  margin-top: 3em;
+}
+
+div.note p {
+  margin: 0px;
+}
