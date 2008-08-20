@@ -1,12 +1,12 @@
 <div id="footer">
 	
 	<div id="bookmarklet">
-		<p>Drag the link below to the bookmarks toolbar of your browser to shrink any url with a click.</p>
+		<p>Drag the link below to the bookmarks toolbar of your browser to shrink urls with a single click.</p>
 		<p id="action">
-			<a href="javascript:void(location.host=='maps.google.com'?location.href='http://bloat.me/remote?website_url='+encodeURIComponent(document.getElementById('link').href):location.href='http://rubyurl.com/remote?website_url='+encodeURIComponent(location.href))">Bloat.me</a>
+			<a href="javascript:void(location.host=='maps.google.com'?location.href='http://bloat.me/remote?website_url='+encodeURIComponent(document.getElementById('link').href):location.href='http://bloat.me/remote?website_url='+encodeURIComponent(location.href))">Bloat.me</a>
 		</p>
 	</div>
-	<p><strong><!-- Bloating <%= @cached_data[:link_count] -%> urls and counting. -->Use Bloat.me to make long urls short.</strong><br /><%= link_to 'Learn more?', '/about' -%> To share your ideas and suggestions visit <a href="http://nokahuna.com/projects/968">No Kahuna.</a></p>
-	<p>&copy;2008-<%= Time.now.strftime('%Y') %>, created by <a href="http://plasticshore.com">Alexander Kohlhofer.</a></p>
+	<p><strong>Use Bloat.me to make long urls short.</strong><br /><%= link_to 'Learn more?', '/about' -%> To share your ideas and suggestions visit <a href="http://nokahuna.com/projects/968">No Kahuna.</a></p>
+	<p>&copy;2008-<%= Time.now.strftime('%Y') %>, created by <a href="http://plasticshore.com">plasticshore.com</a></p>
 </div>
 
