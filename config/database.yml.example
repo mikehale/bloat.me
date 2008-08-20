@@ -13,5 +13,5 @@ test:
   <<: *login
 
 production:
-  database: rubyurl_production
+  database: bloatme_production
   <<: *login

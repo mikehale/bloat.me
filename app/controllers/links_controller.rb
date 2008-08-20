@@ -18,7 +18,7 @@ class LinksController < ApplicationController
       calculate_links # application controller, refactor soon
       render :action => :show
     else
-      flash[:warning] = 'There was an issue trying to create your RubyURL.'
+      flash[:warning] = 'There was an issue trying to create your url.'
       redirect_to :action => :invalid
     end
   end

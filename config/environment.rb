@@ -43,7 +43,7 @@ Rails::Initializer.run do |config|
   
   # See Rails::Configuration for more options
   
-  config.action_controller.session = { :session_key => "_rubyurl_session", :secret => "oy8j2c45ync4ny43n3cmtho3cht35y4t8hn7" } 
+  config.action_controller.session = { :session_key => "_bloatme_session", :secret => "oy8j2c45ync4ny43n3cmtho3cht35y4t8hn7" } 
 end
 
 # Add new inflection rules using the following format 
