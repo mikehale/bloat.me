@@ -1,13 +1,39 @@
 /* @override http://localhost:3000/stylesheets/master.css?1219156771 */
 
-/*------------------------------------------------rubyurl2007-08-06coded by: Chris Griffin / http://planetargon.com													http://chriszgriffin.com------------------------------------------------*//*------------------------------------------------------------------------ =Default------------------------------------------------------------------------*/body {	background: #FFF;	font: 0.9em 'Lucida Grande', Arial, sans-serif; 	color: #000;}
+/*------------------------------------------------based on rubyurloriginal coded by: Chris Griffin / http://planetargon.com http://chriszgriffin.com------------------------------------------------*/body {	background: #FFF;	font: 0.9em 'Lucida Grande', Arial, sans-serif; 	color: #000;}
 
 p {
   margin: 0.5em 0px;
-}/*------------------------------------------------------------------------ =Structure------------------------------------------------------------------------*/#wrapper {	width:740px;	margin:0px auto;}#header {	position: relative;	overflow: hidden;}#logo {}#action a {
-	}#url_stats {	overflow: hidden;	margin: 0 auto 18px;}		#tos {}#footer {	text-align: left;	position:absolute;	bottom:0px;	width:100%;	left:0px;	padding:0px;	font-size:0.8em;
+}----------------------------------------------------------------*/#wrapper {	width:740px;	margin:0px auto;}#header {	position: relative;	overflow: hidden;}#logo a {    background: #FFF url(../images/bloatMe.gif) no-repeat left top;
+    width: 257px;
+    height: 66px;
+    display: block;
+	text-indent: -600px;
+	overflow: hidden;
+	float: right;
+    }#footer #action a {
+ background-color: #46b4ff;
+ padding: 0.2em 0.6em;
+ text-decoration: none;
+  color: #FFF;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+		border: 1px solid #2193e1;
+}
+
+#footer #action a:hover {
+ text-decoration: underline;
+ cursor: move;
+}#url_stats {	overflow: hidden;	margin: 0 auto 18px;}		#tos {}#footer {	text-align: left;	position:absolute;	bottom:0px;	width:100%;	left:0px;	padding:0px;	font-size:0.8em;
+	color: #999;
+  border-top: 1px solid #EEE;
+  background-color: #f5f5f5;
+  	line-height:1.5em;
+}
+
+#footer strong {
 	color: #666;
-	border-top: 1px solid #DDD;}#footer p {	margin: 1em;}#footer a {	color:#666;}/*------------------------------------------------------------------------ =Typography------------------------------------------------------------------------*/h1 {	font-size: 1.5em;}
+}#footer p {	margin: 1em;}#footer a {}h1 {	font-size: 1.5em;}
 
 form h1 {
   font-size: 1.3em;
@@ -16,33 +42,36 @@ form h1 {
   font-weight: normal;
 }
 
-#info_content h1 {}h2 {font-weight: bold;}h3 {}strong {font-weight: bold;}em {font-style: italic;}/*------------------------------------------------------------------------ =Links------------------------------------------------------------------------*/a {}#info_content a {	font-weight: bold;}/*------------------------------------------------------------------------ =Forms------------------------------------------------------------------------*/#link_website_url {	font-size:1.3em;	padding:0.2em 0.2em;
+#info_content h1 {}h2 {font-weight: bold;}h3 {}strong {font-weight: bold;}em {font-style: italic;}a {
+color: #4c79df;}#link_website_url {	font-size:1.3em;	padding:0.2em 0.2em;
 	vertical-align: middle;
 	width:22em;}
-button {	font-size:1em;	padding:0.3em 0.8em;	background-color:#999;
+button {	font-size:1em;	padding:0.4em 0.8em;	background-color:#999;
 	vertical-align: middle;
-	border: 1px solid #666;
+	border: 1px solid #0e82d0;
 	color: #FFF;
 	  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;}
-/*------------------------------------------------------------------------ =Code samples------------------------------------------------------------------------*/#bookmarklet {
+  -moz-border-radius: 3px;
+    background: #4086cb url(../images/blue.gif) repeat-x left top;}
+#bookmarklet {
 	float: right;
-	line-height:1.5em;	border-left:1px solid #EEE;	padding:1em 1.2em 1em 1.2em;
-	margin: 0px;
+	padding:1em 2em 1em 1.2em;
+	margin: 0px 0px 0px 5em;
 	width: 300px;}
 
 #bookmarklet p {
   margin: 0px 0px 0.5em 0px;
+  color: #333;
 }
 
-#action {
-  margin: 0px;
+#footer #action {
+  margin: 0.8em 0px;
 }
 
 
 #url {
  text-align: center;
- margin-top: 15%;
+ margin-top: 5em;
 }
 
 
