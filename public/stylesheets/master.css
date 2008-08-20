@@ -1,14 +1,30 @@
-/* @override 
-	http://localhost:3000/stylesheets/master.css?1219156771
-	http://localhost:3000/stylesheets/master.css?1219228341
-*/
-
-body {	background: #FFF;	font: 0.9em 'Lucida Grande', Arial, sans-serif; 	color: #000;}
+body {
+	background: #FFF;
+	font: 0.9em 'Lucida Grande', Arial, sans-serif; 
+	color: #000;
+	margin:0px;
+	padding:0px;
+}
 
 p {
   margin: 0.5em 0px;
   line-height: 1.5em;
-}----------------------------------------------------------------*/#wrapper {	width:740px;	margin:0px auto;}#header {	position: relative;	overflow: hidden;}#logo a {    background: #FFF url(../images/bloatMe.gif) no-repeat left top;
+}
+
+----------------------------------------------------------------*/
+
+#wrapper {
+	width:740px;
+	margin:0px auto;
+}
+
+#header {
+	position: relative;
+	overflow: hidden;
+}
+
+#logo a {
+    background: #FFF url(../images/bloatMe.gif) no-repeat left top;
     width: 257px;
     height: 66px;
     display: block;
@@ -16,7 +32,12 @@ p {
 	overflow: hidden;
 	float: right;
 	margin: 1em 1.5em 0px 0px;
-    }#footer #action a {
+    }
+
+
+
+
+#footer #action a {
  background-color: #46b4ff;
  padding: 0.2em 0.6em;
  text-decoration: none;
@@ -30,7 +51,24 @@ p {
 #footer #action a:hover {
  text-decoration: underline;
  cursor: move;
-}#url_stats {	display: none;}		#tos {}#footer {	text-align: left;	position:absolute;	bottom:0px;	width:100%;	left:0px;	padding:0px;	font-size:0.8em;
+}
+
+#url_stats {
+	display: none;
+}
+		
+#tos {
+
+}
+
+#footer {
+	text-align: left;
+	position:absolute;
+	bottom:0px;
+	width:100%;
+	left:0px;
+	padding:0px;
+	font-size:0.8em;
 	color: #CCC;
   border-top: 1px solid #EEE;
   background-color: #666;
@@ -39,10 +77,25 @@ p {
 
 #footer strong {
 	color: #EEE;
-}#footer p {	margin: 1em;}#footer a { color: #DDD;}
+}
 
-#footer a:hover { color: #FFF;}h1 {	font-size: 1.5em;
-	margin-bottom: 1em;}
+#footer p {
+	margin: 1em;
+}
+
+#footer a {
+ color: #DDD;
+}
+
+#footer a:hover {
+ color: #FFF;
+}
+
+
+h1 {
+	font-size: 1.5em;
+	margin-bottom: 1em;
+}
 
 form h1 {
   font-size: 1.3em;
@@ -51,26 +104,69 @@ form h1 {
   font-weight: normal;
 }
 
-#info_content h1 {}h2 {font-weight: bold;}h3 {}strong {font-weight: bold;}em {font-style: italic;}a {
-color: #0e82d0;}#link_website_url {	font-size:1.4em;	padding:0.2em 0.2em;
+
+
+#info_content h1 {
+}
+
+h2 {
+font-weight: bold;
+}
+
+h3 {
+
+}
+
+strong {
+font-weight: bold;
+}
+
+em {
+font-style: italic;
+}
+
+
+a {
+color: #0e82d0;
+}
+
+
+
+
+
+#link_website_url {
+	font-size:1.4em;
+	padding:0.2em 0.2em;
 	vertical-align: middle;
-	width:460px;}
+	width:460px;
+}
 
 #link_website_url:focus {
   background-color: #fffebc;
 }
-button {	font-size:1em;	padding:0.5em 0.8em;	background-color:#999;
+
+button {
+	font-size:1em;
+	padding:0.5em 0.8em;
+	background-color:#999;
 	vertical-align: middle;
 	border: 1px solid #0e82d0;
 	color: #FFF;
 	  -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
-    background: #4086cb url(../images/blue.gif) repeat-x left top;}
-#bookmarklet {
+    background: #4086cb url(../images/blue.gif) repeat-x left top;
+}
+
+
+
+
+#bookmarklet {
 	float: right;
-	padding:1em 2em 1em 1.2em;
+
+	padding:1em 2em 1em 1.2em;
 	margin: 0px 0px 0px 5em;
-	width: 340px;}
+	width: 340px;
+}
 
 #bookmarklet p {
   margin: 0px 0px 0.5em 0px;
@@ -102,6 +198,7 @@ color: #0e82d0;}#link_website_url {	font-size:1.4em;	padding:0.2em 0.2e
  font-size: 1.1em;
  margin-bottom: 0.5em;
  color: #999;
+ font-weight: normal;
 }
 
 a.bloatMeUrl {
@@ -148,7 +245,9 @@ a.bloatMeUrl {
 }
 
 #tryAgain a {
-	font-size:1em;	padding:0.3em 0.8em;	background-color:#999;
+	font-size:1em;
+	padding:0.3em 0.8em;
+	background-color:#999;
 	vertical-align: middle;
 	border: 1px solid #0e82d0;
 	color: #FFF;
