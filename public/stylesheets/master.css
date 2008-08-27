@@ -262,6 +262,10 @@ div.note {
   margin-top: 3em;
 }
 
+div.note a {
+  color: #999;
+}
+
 div.note p {
   margin: 0px;
 }
