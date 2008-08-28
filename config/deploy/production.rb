@@ -9,11 +9,8 @@ role :db,  domain, :primary => true
 
 task :link_shared_stuff do
   run "ln -nfs #{shared_path}/config/database.yml #{release_path}/config/database.yml"
-  run "ln -nfs #{shared_path}/config/cookie_secret #{release_path}/config/cookie_secret"
-  run "ln -nfs #{shared_path}/avatars #{release_path}/public/avatars"
-  
+  run "ln -nfs #{shared_path}/config/cookie_secret #{release_path}/config/cookie_secret"  
   run "mkdir -p #{release_path}/tmp"
-  run "mkdir -p #{release_path}/db"
 end
 
 after "deploy:symlink", "link_shared_stuff"
