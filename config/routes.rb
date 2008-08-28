@@ -13,7 +13,7 @@ ActionController::Routing::Routes.draw do |map|
   # -- just remember to delete public/index.html.
   # map.connect '', :controller => "welcome"
   
-  map.connect '', :controller => 'links'
+  
   
   map.connect 'remote', :controller => 'links', :action => 'create'
   
@@ -21,6 +21,7 @@ ActionController::Routing::Routes.draw do |map|
   map.connect 'api', :controller => 'links', :action => 'api'
   map.connect 'report-abuse', :controller => 'links', :action => 'report'
   map.connect 'home', :controller => 'links', :action => 'home'  
+  map.connect '', :controller => 'links', :action => 'home'  
   
   # Install the default route as the lowest priority.
   map.connect ':controller/:action/:id.:format'
