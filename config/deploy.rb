@@ -17,9 +17,19 @@ set :deploy_via, :remote_cache
 set :keep_releases, 30
 set :git_enable_submodules, 1
 
+namespace :thin do
+  %w{start stop restart}.each {|action|
+    desc "#{action} thin"
+    task action.to_sym do
+      run "sudo thin #{action} --config /etc/thin/#{application}.yml"
+    end
+  }
+end
+
 namespace :deploy do
-  [:start, :stop, :restart].each do |action|
-    task action do
+  %w(start stop restart).each do |action|
+    task action.to_sym do 
+      thin.send action 
     end
   end
 end
