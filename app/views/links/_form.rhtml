@@ -1,7 +1,0 @@
-<% form_for :link, @link, :url => {:controller => :links ,:action => 'create'}  do |f| %>
-  <h1><label for="link_website_url">Enter a bloated url</label></h1>
-  <%= f.text_field :website_url %>
-  
-  <button type="submit" value="Submit">Shrink it</button>
-<% end %>
-<!-- <label for="auto_copy" id="copyPaste"><%= check_box_tag :auto_copy, 1, cookies[:auto_copy] == '1' %> Put the result in my clipboard right away.</label> -->
