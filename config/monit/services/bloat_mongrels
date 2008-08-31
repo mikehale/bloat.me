@@ -1,0 +1,31 @@
+check process bloat_mongrel_8001
+  with pidfile /var/run/mongrel_cluster/bloat.8001.pid
+  start program = "/usr/bin/mongrel_rails cluster::start -C /etc/mongrel_cluster/bloat.yml --clean --only 8001"
+  stop program = "/usr/bin/mongrel_rails cluster::stop -C /etc/mongrel_cluster/bloat.yml --clean --only 8001"
+
+  if failed host 127.0.0.1 port 8001 protocol http
+    with timeout 10 seconds
+    then restart
+
+  if memory is greater than 50% for 4 cycles then restart
+  if cpu is greater than 80% for 4 cycles then restart 
+  if 20 restarts within 20 cycles then timeout 
+
+  group bloat_mongrels
+
+# ========================================================== #
+  
+check process bloat_mongrel_8002
+  with pidfile /var/run/mongrel_cluster/bloat.8002.pid
+  start program = "/usr/bin/mongrel_rails cluster::start -C /etc/mongrel_cluster/bloat.yml --clean --only 8002"
+  stop program = "/usr/bin/mongrel_rails cluster::stop -C /etc/mongrel_cluster/bloat.yml --clean --only 8002"
+
+  if failed host 127.0.0.1 port 8002 protocol http
+    with timeout 10 seconds
+    then restart
+
+  if memory is greater than 50% for 4 cycles then restart
+  if cpu is greater than 80% for 4 cycles then restart 
+  if 20 restarts within 20 cycles then timeout 
+
+  group bloat_mongrels
