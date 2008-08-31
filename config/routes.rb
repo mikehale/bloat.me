@@ -2,7 +2,7 @@ ActionController::Routing::Routes.draw do |map|
   map.connect 'remote', :controller => 'links', :action => 'create'  
   map.connect 'about', :controller => 'links', :action => 'about'
   map.connect 'report-abuse', :controller => 'links', :action => 'report'
-  map.root :controller => 'links', :action => 'home'
+  map.root :controller => 'links', :action => 'index'
   
   # Install the default route as the lowest priority.
   map.connect ':controller/:action/:id.:format'

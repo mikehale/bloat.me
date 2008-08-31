@@ -1,14 +1,9 @@
 class LinksController < ApplicationController
 
   def index  
-    redirect_to '/home'
+    @link = Link.new
   end
   
-  def home
-    @link = Link.new
-    render :action => 'index'
-  end
-
   def create
     website_url = params.include?(:website_url) ? params[:website_url] : params[:link][:website_url]
     @link = Link.find_or_create_by_website_url( website_url )
