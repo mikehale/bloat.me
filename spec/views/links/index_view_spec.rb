@@ -5,8 +5,8 @@ describe "links/index" do
     render 'links/index'
   end
   
-  it "should display Create a RubyURL in a h1 tag" do
-    response.should have_tag('h1', 'Create a RubyURL')
+  it "should display Enter a bloated url in a h1 tag" do
+    response.should have_tag('h1', 'Enter a bloated url')
   end
   
   it "should display a text input field for the user to paste their url in" do    
@@ -24,12 +24,12 @@ describe "links/show" do
     render 'links/show'
   end
   
-  it "should display Here is your RubyURL in a h1 tag" do
-    response.should have_tag('h1', 'Here is your RubyURL')
+  it "should display Your short url is ready: in a h1 tag" do
+    response.should have_tag('h1', 'Your short url is ready:')
   end
     
   it "should display a link for the user to copy" do
-    response.should have_tag('div#url')
+    response.should have_tag('div#resultUrl')
     response.should have_tag('a', 'http://localhost:3000/x093')
   end
   
