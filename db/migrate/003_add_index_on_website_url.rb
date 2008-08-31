@@ -1,9 +1,9 @@
 class AddIndexOnWebsiteUrl < ActiveRecord::Migration
   def self.up
-    execute "CREATE INDEX website_url_index ON links (website_url(200));"
+    add_index(:links, :website_url)
   end
 
   def self.down
-    execute "DROP INDEX website_url_index on links;"
+    remove_index(:links, :website_url)
   end
 end
