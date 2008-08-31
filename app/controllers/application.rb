@@ -1,15 +1,11 @@
-# Filters added to this controller apply to all controllers in the application.
-# Likewise, all the methods added will be available for all controllers.
-
 class ApplicationController < ActionController::Base
   helper :all # include all helpers, all the time
-
-  # See ActionController::RequestForgeryProtection for details
-  # Uncomment the :secret if you're not using the cookie session store
-  protect_from_forgery # :secret => '923b0212b9d9e282a97f17ebe9e6fa5a'
+  protect_from_forgery
   
-  # See ActionController::Base for details 
-  # Uncomment this to filter the contents of submitted sensitive data parameters
-  # from your application log (in this case, all fields with names like "password"). 
-  # filter_parameter_logging :password
+  before_filter :calculate_links
+  
+  # refactor to some sort of cache tool
+  def calculate_links
+    @cached_data = {:link_count => Link.count}
+  end
 end

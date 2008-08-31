@@ -1,0 +1,271 @@
+body {
+	background: #FFF;
+	font: 0.9em 'Lucida Grande', Arial, sans-serif; 
+	color: #000;
+	margin:0px;
+	padding:0px;
+}
+
+p {
+  margin: 0.5em 0px;
+  line-height: 1.5em;
+}
+
+
+#wrapper {
+	width:740px;
+	margin:0px auto;
+}
+
+#header {
+	position: relative;
+	overflow: hidden;
+}
+
+#logo a {
+    background: #FFF url(../images/bloatMe.gif) no-repeat left top;
+    width: 257px;
+    height: 66px;
+    display: block;
+	text-indent: -600px;
+	overflow: hidden;
+	float: right;
+	margin: 1em 1.5em 0px 0px;
+    }
+
+
+
+
+#footer #action a {
+ background-color: #46b4ff;
+ padding: 0.2em 0.6em;
+ text-decoration: none;
+  color: #FFF;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+
+
+}
+
+#footer #action a:hover {
+ text-decoration: underline;
+ cursor: move;
+}
+
+#url_stats {
+	display: none;
+}
+		
+#tos {
+
+}
+
+#footer {
+	text-align: left;
+	position:absolute;
+	bottom:0px;
+	width:100%;
+	left:0px;
+	padding:0px;
+	font-size:0.8em;
+	color: #CCC;
+  border-top: 1px solid #EEE;
+  background-color: #666;
+  	line-height:1.5em;
+}
+
+#footer strong {
+	color: #EEE;
+}
+
+#footer p {
+	margin: 1em;
+}
+
+#footer a {
+ color: #DDD;
+}
+
+#footer a:hover {
+ color: #FFF;
+}
+
+
+h1 {
+	font-size: 1.5em;
+	margin-bottom: 1em;
+}
+
+form h1 {
+  font-size: 1.3em;
+  margin-bottom: 0.5em;
+  color: #333;
+  font-weight: normal;
+}
+
+
+
+#info_content h1 {
+}
+
+h2 {
+font-weight: bold;
+}
+
+h3 {
+
+}
+
+strong {
+font-weight: bold;
+}
+
+em {
+font-style: italic;
+}
+
+
+a {
+color: #0e82d0;
+}
+
+
+
+
+
+#link_website_url {
+	font-size:1.4em;
+	padding:0.2em 0.2em;
+	vertical-align: middle;
+	width:460px;
+}
+
+#link_website_url:focus {
+  background-color: #fffebc;
+}
+
+button {
+	font-size:1em;
+	padding:0.5em 0.8em;
+	background-color:#999;
+	vertical-align: middle;
+	border: 1px solid #0e82d0;
+	color: #FFF;
+	  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+    background: #4086cb url(../images/blue.gif) repeat-x left top;
+}
+
+
+
+
+#bookmarklet {
+	float: right;
+
+	padding:1em 2em 1em 1.2em;
+	margin: 0px 0px 0px 5em;
+	width: 340px;
+}
+
+#bookmarklet p {
+  margin: 0px 0px 0.5em 0px;
+}
+
+#footer #action {
+  margin: 0px;
+  padding: 0.6em 0px;
+  color: #AAA;
+   background: transparent url(../images/drag.gif) no-repeat 6.5em top;
+}
+
+
+#enterUrl {
+ text-align: left;
+ width: 600px;
+ padding: 0px 2em;
+ margin: 5em auto 0px auto;
+}
+
+#resultUrl {
+ text-align: left;
+ width: 600px;
+ padding: 0px 2em;
+ margin: 5em auto 0px auto;
+}
+
+#resultUrl h1 {
+ font-size: 1.1em;
+ margin-bottom: 0.5em;
+ color: #999;
+ font-weight: normal;
+}
+
+a.bloatMeUrl {
+  font-size: 2.2em;
+  text-decoration: none;
+  margin-bottom: 1em;
+}
+
+
+#xCopy {
+    margin-top: 3em;
+    height: 1.5em;
+}
+
+#startOver {
+}
+
+#x_copied {
+	color: #222;
+	margin-right: 1em;
+}
+
+
+
+
+#copyPaste {
+  font-size: 0.8em;
+  margin-top: 1.5em;
+  display: block;
+  color: #999;
+}
+
+
+#content {
+ text-align: left;
+ width: 600px;
+ padding: 0px 2em;
+ margin: 2em auto 0px auto;
+}
+
+
+#tryAgain {
+  margin-top: 2.5em;  
+}
+
+#tryAgain a {
+	font-size:1em;
+	padding:0.3em 0.8em;
+	background-color:#999;
+	vertical-align: middle;
+	border: 1px solid #0e82d0;
+	color: #FFF;
+	  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  text-decoration: none;
+    background: #4086cb url(../images/blue.gif) repeat-x left top;
+    }
+
+div.note {
+  font-size: 0.9em;
+  color: #999;
+  margin-top: 3em;
+}
+
+div.note a {
+  color: #999;
+}
+
+div.note p {
+  margin: 0px;
+}

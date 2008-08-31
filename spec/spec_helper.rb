@@ -45,3 +45,9 @@ Spec::Runner.configure do |config|
   # 
   # For more information take a look at Spec::Example::Configuration and Spec::Runner
 end
+
+module LinkSpecHelper
+  def valid_attributes
+    {:website_url => 'http://www.google.com/', :ip_address => '192.168.1.1'}
+  end
+end
