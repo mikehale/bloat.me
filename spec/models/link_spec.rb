@@ -94,7 +94,7 @@ describe Link, "a new link" do
     @link.permalink.should be_nil
     @link.save.should be_true
     @link.permalink.should_not be_nil
-    @link.permalink.should eql(DOMAIN_NAME + @link.token)
+    @link.permalink.should eql("http://#{APP_HOST}/#{@link.token}")
   end
 end
 
