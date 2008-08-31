@@ -7,3 +7,5 @@ config/database.yml
 db/*.sqlite3
 db/schema.rb
 deploy_history.txt
+base_*.js
+base_*.css

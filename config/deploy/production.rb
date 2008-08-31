@@ -20,6 +20,13 @@ namespace :console do
   end
 end
 
+namespace :deploy do
+ desc "Create asset packages for production" 
+ task :after_update_code, :roles => [:web] do
+   run "cd #{release_path} && rake RAILS_ENV=production asset:packager:build_all"
+ end
+end
+
 task :link_shared_stuff do
   run "ln -nfs #{shared_path}/config/database.yml #{release_path}/config/database.yml"
   run "ln -nfs #{shared_path}/config/cookie_secret #{release_path}/config/cookie_secret"  
