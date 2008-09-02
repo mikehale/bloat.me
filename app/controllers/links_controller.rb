@@ -5,8 +5,9 @@ class LinksController < ApplicationController
   end
   
   def create
-    website_url = params[:link][:website_url] if params.include?(:link)
-        
+    website_url = params[:link][:website_url] if params.include?(:link) # from form
+    website_url = params[:website_url] if params.include?(:website_url) # from bookmarklet
+    
     @link = Link.find_or_create_by_website_url( website_url )
     @link.ip_address = request.remote_ip if @link.new_record?
     
