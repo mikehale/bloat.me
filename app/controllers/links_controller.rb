@@ -5,7 +5,8 @@ class LinksController < ApplicationController
   end
   
   def create
-    website_url = params.include?(:website_url) ? params[:website_url] : params[:link][:website_url]
+    website_url = params[:link][:website_url] if params.include?(:link)
+        
     @link = Link.find_or_create_by_website_url( website_url )
     @link.ip_address = request.remote_ip if @link.new_record?
     
@@ -25,7 +26,7 @@ class LinksController < ApplicationController
       @link.add_visit(request)
       redirect_to @link.website_url, { :status => 301 }
     else
-      redirect_to :action => 'invalid'
+      redirect_to :action => :invalid
     end
   end
 end
