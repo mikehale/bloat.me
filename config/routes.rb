@@ -1,6 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
   map.connect 'remote', :controller => 'links', :action => 'create'  
   map.connect 'about', :controller => 'links', :action => 'about'
+  map.connect 'abuse', :controller => 'links', :action => 'abuse'
   map.connect 'report-abuse', :controller => 'links', :action => 'report'
   map.root :controller => 'links', :action => 'index'
   

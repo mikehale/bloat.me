@@ -1,3 +1,5 @@
+/* @override http://localhost:3000/stylesheets/master.css */
+
 body {
 	background: #FFF;
 	font: 0.9em 'Lucida Grande', Arial, sans-serif; 
@@ -69,7 +71,6 @@ p {
 	padding:0px;
 	font-size:0.8em;
 	color: #CCC;
-  border-top: 1px solid #EEE;
   background-color: #666;
   	line-height:1.5em;
 }
@@ -81,6 +82,20 @@ p {
 #footer p {
 	margin: 1em;
 }
+
+#footer p.terms {
+	padding: 0.6em 1em;
+	margin:0px;
+	background-color: #EEE;
+	clear: both;
+	color: #666;
+
+}
+
+#footer p.terms a {
+	color: #ef0000;
+}
+
 
 #footer a {
  color: #DDD;
@@ -161,9 +176,8 @@ button {
 
 #bookmarklet {
 	float: right;
-
 	padding:1em 2em 1em 1.2em;
-	margin: 0px 0px 0px 5em;
+	margin: 0px 0px 0px 2em;
 	width: 340px;
 }
 
