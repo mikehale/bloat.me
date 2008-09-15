@@ -3,7 +3,6 @@ set :default_stage, "production"
 require 'capistrano/ext/multistage'
 require 'spacesuit/recipes/multistage_patch'
 require 'spacesuit/recipes/common'
-require 'mongrel_cluster/recipes_2'
 require 'config/recipes/monit'
 
 set :application, "bloat"
