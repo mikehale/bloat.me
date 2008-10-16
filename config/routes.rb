@@ -3,6 +3,7 @@ ActionController::Routing::Routes.draw do |map|
   map.connect 'about', :controller => 'links', :action => 'about'
   map.connect 'abuse', :controller => 'links', :action => 'abuse'
   map.connect 'report-abuse', :controller => 'links', :action => 'report'
+  map.connect 'admin', :controller => 'admin', :action => 'index'
   map.root :controller => 'links', :action => 'index'
   
   # Install the default route as the lowest priority.

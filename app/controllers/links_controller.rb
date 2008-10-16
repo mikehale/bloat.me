@@ -1,5 +1,5 @@
 class LinksController < ApplicationController
-  
+    
   def index  
     @link = Link.new
   end
@@ -19,7 +19,7 @@ class LinksController < ApplicationController
       redirect_to :action => :invalid
     end
   end
-
+  
   def redirect
     @link = Link.find_by_token( params[:token] )
 
@@ -30,4 +30,5 @@ class LinksController < ApplicationController
       redirect_to :action => :invalid
     end
   end
+  
 end
