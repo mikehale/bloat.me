@@ -1,6 +1,5 @@
 class AdminController < ApplicationController
   before_filter :authorize, :except => [:login]
-  skip_before_filter :verify_authenticity_token
   
   def index
     @links = Link.find(:all, :limit => 10, :order => "updated_at DESC")
@@ -8,6 +7,7 @@ class AdminController < ApplicationController
   
   def logout
     session[:password] = nil
+    redirect_to :action => :index
   end
     
   private

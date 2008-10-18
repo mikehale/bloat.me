@@ -1,7 +1,5 @@
 <ul>
-  <% @links.each do |e| %>
-    <li>http://<%= APP_DOMAIN %>/<%= e.token %> => <%= e.website_url %> <%= e.updated_at %> </li>
-  <% end %>
+<%= render :partial => "link", :collection => @links -%>
 </ul>
 
 <hr/>
