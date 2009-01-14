@@ -23,3 +23,10 @@ end
 
 after "deploy:symlink", "link_shared_stuff"
 before "deploy:update_code", "deploy:git:pending"
+
+namespace :deploy do
+  desc "Restart Application"
+  task :restart, :roles => :app do
+    run "touch #{current_path}/tmp/restart.txt"
+  end
+end
