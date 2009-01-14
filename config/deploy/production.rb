@@ -2,11 +2,10 @@ require 'config/recipes/logs_console'
 
 set :deploy_to, "/var/www/apps/#{application}"
 set :domain, "bloat.me"
-
 set :user, "bloat"
 
 role :web, domain
-role :app, domain
+role :app, domain, :primary => true
 role :db,  domain, :primary => true
 
 namespace :deploy do
