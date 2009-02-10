@@ -22,5 +22,5 @@ end
 
 package :ree_dependencies do
   description 'Ruby Enterprise Edition Dependencies'
-  apt %w(zlib1g-dev libssl-dev)
+  apt %w(zlib1g-dev libssl-dev libreadline5-dev)
 end
