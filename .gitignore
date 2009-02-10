@@ -10,3 +10,4 @@ deploy_history.txt
 base_*.js
 base_*.css
 config/cookie_secret
+public/system/*
