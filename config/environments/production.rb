@@ -5,7 +5,9 @@
 config.cache_classes = true
 
 # Use a different logger for distributed setups
-# config.logger = SyslogLogger.new
+require 'syslog_logger'
+config.logger = RAILS_DEFAULT_LOGGER = SyslogLogger.new('RAILS_bloat')
+config.log_level = :debug
 
 # Full error reports are disabled and caching is turned on
 config.action_controller.consider_all_requests_local = false
