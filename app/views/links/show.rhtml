@@ -1,28 +1,24 @@
 <div id="app_content">
+  <div id="resultUrl">
+    <h1>Your short url is ready:</h1>
+    <%= link_to @link.permalink, @link.permalink, :class => "bloatMeUrl", :id => "bloatMeUrl" -%>
+    
+    <p id="xCopy">
+      <span id="x_copy_button"><a href="#">Copy this Url</a> or </span>
+      <span id="x_copied" style="display:none;">Your url is ready for pasting!</span>
+      <span id="startOver"><%= link_to 'Create another one?', '/' -%></span>
+    </p>
 
-
-	<div id="resultUrl">
-		<h1>Your short url is ready:</h1>
-		<%= link_to @link.permalink, @link.permalink, :class => "bloatMeUrl" -%>
-		<p id="xCopy">
-		<span id="x_copy_button"><%= link_to_function 'Copy this Url', "copy('#{@link.permalink}');" -%> or </span>
-		<span id="x_copied" style="display:none;">Your url is ready for pasting!</span>
-		<span id="startOver"><%= link_to 'Create another one?', '/' -%></span>
-		</p>
-		
-		<dl id="url_stats">
-			<dt>Original url Length:</dt> 
-			<dd><%= @link.website_url.length -%> characters</dd>
-			<dt>New length:</dt> 
-			<dd><%= @link.permalink.length -%> characters</dd>
-			<dt>Shortened by:</dt> 
-			<dd><%= @link.website_url.length - @link.permalink.length -%> characters</dd>
-		</dl>
-	</div>
-
-
-
-	<div id="action">
-		
-	</div>
-</div><!-- end app_content -->
+    <dl id="url_stats">
+      <dt>Original url Length:</dt> 
+      <dd><%= @link.website_url.length -%> characters</dd>
+      <dt>New length:</dt> 
+      <dd><%= @link.permalink.length -%> characters</dd>
+      <dt>Shortened by:</dt> 
+      <dd><%= @link.website_url.length - @link.permalink.length -%> characters</dd>
+    </dl>
+  </div>
+  
+  <div id="action">
+  </div>
+</div>
