@@ -1,17 +1,18 @@
-# PLANET ARGON approved database.yml file
-login: &login
-  adapter: postgresql
+env: &env
+  adapter: mysql
+  encoding: utf8
+  username: root
+  password:
   host: localhost
-  port: 5432
 
 development:
-  database: rubyurl_development
-  <<: *login
+  <<: *env
+  database: bloat.me_development
 
 test:
-  database: rubyurl_test
-  <<: *login
+  <<: *env
+  database: bloat.me_test
 
 production:
-  database: bloatme_production
-  <<: *login
+  <<: *env
+  database: bloat.me_production
